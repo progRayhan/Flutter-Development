@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   // function body
-  runApp(const MaterialApp(home: Text("This is my first app")));
+  runApp(const MaterialApp(
+    home: Scaffold(
+      body: Center(
+        child: Text("Center Text"),
+      ),
+    ),
+  ));
 }
