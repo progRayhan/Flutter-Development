@@ -2,12 +2,23 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 40, 160, 158),
-        body: Center(
-          child: Text("Hello Bangladesh Bd"),
-        ),
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.deepPurpleAccent, Colors.lightGreenAccent],
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft
+            )
+          ),
+          child: const Center(
+            child: Text("My First App", style:TextStyle(
+              fontSize: 24,
+              color: Colors.white
+            )),
+          ),
+        )
       ),
     )
   );
